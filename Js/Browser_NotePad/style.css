@@ -1,0 +1,38 @@
+body {
+  font-family: Vazir, serif;
+  background-color: #444;
+}
+.delete-item {
+  cursor: pointer;
+  transition: .5s all;
+}
+.delete-item:hover{
+  animation: shake .1s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0) scale(1.5) }
+  33% { transform: translateX(3px) scale(1.5) }
+  66% { transform: translateX(-3px) scale(1.5) }
+  100% { transform: translateX(0) scale(1.5) }
+}
+#alertTask, #alertClear {
+  color: red;
+  font-size: 12px;
+}
+.label, h5{
+  display: block;
+  text-align: center;
+}
+.input-search{
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+.ti-search {
+  background-color: transparent;
+  padding: 10px;
+  border: 0.2px solid rgba(196, 196, 196);
+  border-radius: 3px;
+  cursor: progress;
+}

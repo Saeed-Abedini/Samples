@@ -1,0 +1,47 @@
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: Vazir;
+  color: #5a5a5a;
+}
+.box-shadow {
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+}
+#sideBar {
+  height: 100%;
+}
+#sideBar.collapsing {
+  height: 0%;
+}
+@media (min-width: 768px) {
+  #sideBar {
+    height: calc(100vh - 61px) !important;
+    position: fixed;
+    transition: transform 0.1s linear;
+  }
+  #sideBar.collapse {
+    transform: translate(100%, 0);
+  }
+  #sideBar.collapse.show {
+    transform: translate(0, 0);
+  }
+  #sideBar.collapsing {
+    transform: translate(100%, 0);
+  }
+  #main {
+    transition: .2s all;
+}
+}
+#sideBar,
+#sideBar a {
+  color: white;
+}
+#sideBar .fa-chevron-left {
+  transition: 0.3s transform ease-in-out;
+}
+#sideBar .fa-chevron-left {
+  transform: rotate(-90deg);
+}
+#sideBar .collapsed .fa-chevron-left {
+  transform: rotate(0deg);
+}

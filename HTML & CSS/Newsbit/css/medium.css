@@ -1,0 +1,71 @@
+@media (max-width: 991.98px) {
+  .app {
+    width: calc(100% - 20px);
+    padding: 0 10px;
+  }
+  .logo-image {
+    width: 100%;
+    height: 16px;
+  }
+  .header-menu-item {
+    padding: 0 10px;
+  }
+  /**************  INTRODUCTION **************/
+  .intro-2-3 {
+    height: 350px;
+  }
+  .intro-1-3-first,
+  .intro-1-3-second{
+    height: 170px;
+  }
+  .intro-1-3-horiz-first,
+  .intro-1-3-horiz-second,
+  .intro-1-3-horiz-third {
+    height: 170px;
+  }
+  .header-intro {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .intro-captions {
+    margin: 0;
+  }
+  .header-intro-1-3 {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .intro-list-item {
+    font-size: 12px;
+    padding-right: 10px;
+    margin: 0;
+    font-weight: 400;
+  }
+  /**************  MAIN **************/
+  .content{
+    display: inline-block;
+    margin: 0;
+  }
+  .main-content{
+    order: 1;
+    width: 100%;
+  }
+  .sidebar{
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /**************  FOOTER **************/
+  .content-footer{
+    width: 753px;
+    margin: 0 auto;
+  }
+  .description, .first-link {
+    margin-right: 20px;
+  }
+}

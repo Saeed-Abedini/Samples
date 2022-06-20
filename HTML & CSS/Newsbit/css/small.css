@@ -1,0 +1,160 @@
+@media (max-width: 767.98px) {
+    .app {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+
+    /**************  HEADER **************/
+    .right-menu {
+        display: flex;
+        align-items: center;
+        float: right;
+        padding-right: 15px;
+    }
+
+    .berger-menu {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .berger-menu:active {
+        color: #f9b500;
+    }
+
+    .search-icon {
+        display: inline-block;
+    }
+
+    .header-menu-item .search-icon-li {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+
+    .show {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: auto;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        background-color: aliceblue;
+        box-shadow: 0 0 5px #ccc;
+        z-index: 10;
+        animation-name: show-menu;
+        animation-duration: .5s;
+
+    }
+
+    @keyframes show-menu {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    .header-menu-item a {
+        display: block;
+        border-top: 1px solid #ccc;
+        padding: 15px;
+        animation-name: show-menu-item;
+        animation-duration: .5s;
+    }
+
+    @keyframes show-menu-item {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .header-menu-item {
+        padding: 0;
+    }
+
+    /**************  INTRODUCTION **************/
+    .intro-2-3,
+    .intro-1-3-first,
+    .intro-1-3-second,
+    .intro-1-3-horiz-first,
+    .intro-1-3-horiz-second,
+    .intro-1-3-horiz-third {
+        width: 100%;
+        height: 300px;
+    }
+
+    .intro-2-3,
+    .intro-1-3-first {
+        margin-bottom: 10px;
+    }
+
+    .intro-2-3-bg::before,
+    .intro-1-3-first-bg::before,
+    .intro-1-3-second-bg::before,
+    .intro-1-3-horiz-first-bg::before,
+    .intro-1-3-horiz-second-bg::before,
+    .intro-1-3-horiz-third-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.6;
+        background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.4) 100%);
+    }
+
+    .intro-2-3-bg:after,
+    .intro-1-3-first-bg::after,
+    .intro-1-3-second-bg::after,
+    .intro-1-3-horiz-first-bg::after,
+    .intro-1-3-horiz-second-bg::after,
+    .intro-1-3-horiz-third-bg::after {
+        top: 60%;
+        opacity: 0.8;
+        background: linear-gradient(to top, #000 0%, rgb(0, 0, 0) 100%);
+    }
+
+    .header-intro {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    .intro-captions {
+        margin: 0;
+    }
+
+    .header-intro-1-3 {
+        font-size: 20px;
+        padding: 15px 0;
+        line-height: 28px;
+    }
+
+    /**************  FOOTER **************/
+    .content-footer {
+        width: 561px;
+        margin: 0 auto;
+    }
+
+    .description, .first-link {
+        margin-right: 15px;
+    }
+
+    .social a {
+        padding-right: 7px;
+    }
+}
